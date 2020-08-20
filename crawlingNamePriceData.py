@@ -4,7 +4,8 @@ import re
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
-laptop_name = []
+laptopName = []
+laptopPrice = []
 
 page = list(range(1,10,1))
 for page_number in page:
@@ -15,9 +16,13 @@ for page_number in page:
     
     for a_bo3 in bsObject.find_all('div', 'basicList_title__3P9Q7'):
         for b in a_bo3.find_all('a', 'basicList_link__1MaTN'):
-            # print(b)
+            laptopName.append(re.sub('<.+?>', '',str(b),0).strip())
             
-            laptop_name.append(re.sub('<.+?>', '',str(b),0).strip())
+    for a_bo3 in bsObject.find_all('span', 'price_num__2WUXn'):
+        for b in a_bo3:
+            laptopPrice.append(re.sub('<.+?>', '',str(b),0).strip())
+    
+    matrix = [laptopName, laptopPrice]
+    laptopData = list(zip(*matrix))
             
-            
-print(laptop_name)
+print(laptopData)
