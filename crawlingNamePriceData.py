@@ -1,3 +1,5 @@
+#크롤링한 랩탑의 이름, 가격 데이터를 묶어서 출력하는 코드입니다.
+
 import re
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
