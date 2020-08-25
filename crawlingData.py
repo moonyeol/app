@@ -22,7 +22,7 @@ PRODUCT_NAME = []
 PRICE = []
 file_data = []
 
-page = list(range(1, 5, 1))
+page = list(range(1, 200, 1)) #1page당 5개의 데이터 수집
 for page_number in page:
 
     url = "https://search.shopping.naver.com/search/all?exrental=true&exused=true&frm=NVSHATC&origQuery=%EB%85%B8%ED%8A%B8%EB%B6%81&pagingIndex=" + str(page_number) + "&pagingSize=40&productSet=total&query=%EB%85%B8%ED%8A%B8%EB%B6%81&sort=rel&timestamp=&viewType=list"
