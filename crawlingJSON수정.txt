@@ -30,7 +30,7 @@
 		“WEIGHT” : “NULL
 	},
 	{
-		“PRODUCT_NAME” : “레노버 Legion 5Pi-15IMH i7 HYPER EDITION 2060 프리도스 144Hz 게이밍노트북 배틀그라운드 고사양노트북",
+		“PRODUCT_NAME” : “레노버 Legion 5Pi-15IMH i7 HYPER EDITION 2060 프리도스 144Hz 게이밍노트북 배틀그라운드 고사양노트북", 
 		“PRICE” : “1,699,000원",
 		“DISPLAY” : “15인치(37~39cm)",
 		“CPU_NAME” : NULL,
